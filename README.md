@@ -8,7 +8,7 @@
 
 - First you will need to clone the project, so run the command below:
 
-    `git clone `
+    `git@github.com:rpaffaro/subscribe-challenge.git`
 
 - Once you have cloned the repository, you can run the project with:
 
@@ -29,7 +29,7 @@
 
 - First you will need to clone the project, so run the command below:
 
-    `git clone `
+    `git@github.com:rpaffaro/subscribe-challenge.git`
 
 - After cloning the repository, you can build the Docker image with the following command:
 
