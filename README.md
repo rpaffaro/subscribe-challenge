@@ -1,5 +1,5 @@
 ## Subscribe Challenge
- - [Challange Information](https://gist.github.com/safplatform/792314da6b54346594432f30d5868f36)
+ - [Challenge Information](https://gist.github.com/safplatform/792314da6b54346594432f30d5868f36)
 
 ## How to execute locally
 
@@ -33,12 +33,12 @@
 
 - After cloning the repository, you can build the Docker image with the following command:
 
-    `docker build -t challange .`
+    `docker build -t challenge .`
 
 - Once the build is complete, you can run the container with:
 
-    `docker run challange`
+    `docker run challenge`
 
 - To run the test suite in docker you can execute the command:
 
-    `docker run challange rspec`
+    `docker run challenge rspec`

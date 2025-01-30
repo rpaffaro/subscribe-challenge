@@ -22,4 +22,4 @@ class Main
   end
 end
 
-Main.new.execute
+puts Main.new.execute

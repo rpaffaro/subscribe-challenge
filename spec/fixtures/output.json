@@ -1,0 +1,102 @@
+[
+  {
+    "order": {
+      "items": [
+        {
+          "quantity": 2,
+          "name": "book",
+          "price": "12.49",
+          "categories": [
+            "book"
+          ]
+        },
+        {
+          "quantity": 1,
+          "name": "music CD",
+          "price": "14.99",
+          "categories": [
+            "entertainment"
+          ]
+        },
+        {
+          "quantity": 1,
+          "name": "chocolate bar",
+          "price": "0.85",
+          "categories": [
+            "food"
+          ]
+        }
+      ],
+      "total": "42.32",
+      "sales_taxes": "1.50"
+    }
+  },
+  {
+    "order": {
+      "items": [
+        {
+          "quantity": 1,
+          "name": "imported box of chocolates",
+          "price": "10.00",
+          "categories": [
+            "food",
+            "imported"
+          ]
+        },
+        {
+          "quantity": 1,
+          "name": "imported bottle of perfume",
+          "price": "47.50",
+          "categories": [
+            "imported",
+            "perfume"
+          ]
+        }
+      ],
+      "total": "65.15",
+      "sales_taxes": "7.65"
+    }
+  },
+  {
+    "order": {
+      "items": [
+        {
+          "quantity": 1,
+          "name": "imported bottle of perfume",
+          "price": "27.99",
+          "categories": [
+            "imported",
+            "perfume"
+          ]
+        },
+        {
+          "quantity": 1,
+          "name": "bottle of perfume",
+          "price": "18.99",
+          "categories": [
+            "perfume"
+          ]
+        },
+        {
+          "quantity": 1,
+          "name": "packet of headache pills",
+          "price": "9.75",
+          "categories": [
+            "medical"
+          ]
+        },
+        {
+          "quantity": 3,
+          "name": "imported box of chocolates",
+          "price": "11.25",
+          "categories": [
+            "food",
+            "imported"
+          ]
+        }
+      ],
+      "total": "98.38",
+      "sales_taxes": "7.90"
+    }
+  }
+]
