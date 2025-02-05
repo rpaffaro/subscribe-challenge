@@ -1,3 +1,7 @@
+# frozen_string_literal: true
+
+# This class is responsible for formatting the information of an order to
+# be displayed.
 class OrderSerializer
   def initialize(order)
     @order = order
@@ -5,10 +9,10 @@ class OrderSerializer
 
   def as_json
     {
-      "order": {
+      order: {
         items: items(order.items),
-        "total": format('%.2f', order.total_amount),
-        "sales_taxes": format('%.2f', order.total_tax)
+        total: format('%.2f', order.total_amount),
+        sales_taxes: format('%.2f', order.total_tax)
       }
     }
   end

@@ -1,5 +1,9 @@
+# frozen_string_literal: true
+
 require 'json'
 
+# This class is responsible for importing orders from a file and
+# performing the parsing.
 class ImportFile
   def initialize(file_path)
     @file_path = file_path

@@ -1,7 +1,12 @@
-require './config/initializers/autoload.rb'
+# frozen_string_literal: true
 
+require './config/initializers/autoload'
+
+# The class is responsible for orchestrating the entire flow of instantiating
+# the orders, calculating the taxes, and returning the result.
 class Main
   attr_reader :orders, :file_path
+
   def initialize
     @orders = build_orders
   end

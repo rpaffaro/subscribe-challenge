@@ -1,3 +1,7 @@
+# frozen_string_literal: true
+
+# This class is responsible for containing the information of the items
+# in an order.
 class Item
   attr_accessor :quantity, :name, :price, :categories, :total_tax
 
