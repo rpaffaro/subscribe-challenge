@@ -1,0 +1,12 @@
+categories:
+  food:
+    tax: 0
+  medical:
+    tax: 0
+  book:
+    tax: 0
+  imported:
+    tax: 0.05
+  regular:
+    tax: 0.1
+

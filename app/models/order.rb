@@ -16,10 +16,8 @@ class Order
 
   def calculate
     items.each do |item|
-      self.total_tax += item.quantity * item.total_tax
-      self.total_amount += (
-        item.quantity * (item.price + item.total_tax)
-      ).round(2)
+      self.total_tax += item.total_tax
+      self.total_amount += item.updated_price
     end
   end
 

@@ -5,7 +5,7 @@
         {
           "quantity": 2,
           "name": "book",
-          "price": "12.49",
+          "total_price": "24.98",
           "categories": [
             "book"
           ]
@@ -13,7 +13,7 @@
         {
           "quantity": 1,
           "name": "music CD",
-          "price": "14.99",
+          "total_price": "16.49",
           "categories": [
             "entertainment"
           ]
@@ -21,7 +21,7 @@
         {
           "quantity": 1,
           "name": "chocolate bar",
-          "price": "0.85",
+          "total_price": "0.85",
           "categories": [
             "food"
           ]
@@ -37,7 +37,7 @@
         {
           "quantity": 1,
           "name": "imported box of chocolates",
-          "price": "10.00",
+          "total_price": "10.50",
           "categories": [
             "food",
             "imported"
@@ -46,7 +46,7 @@
         {
           "quantity": 1,
           "name": "imported bottle of perfume",
-          "price": "47.50",
+          "total_price": "54.65",
           "categories": [
             "imported",
             "perfume"
@@ -63,7 +63,7 @@
         {
           "quantity": 1,
           "name": "imported bottle of perfume",
-          "price": "27.99",
+          "total_price": "32.19",
           "categories": [
             "imported",
             "perfume"
@@ -72,7 +72,7 @@
         {
           "quantity": 1,
           "name": "bottle of perfume",
-          "price": "18.99",
+          "total_price": "20.89",
           "categories": [
             "perfume"
           ]
@@ -80,7 +80,7 @@
         {
           "quantity": 1,
           "name": "packet of headache pills",
-          "price": "9.75",
+          "total_price": "9.75",
           "categories": [
             "medical"
           ]
@@ -88,7 +88,7 @@
         {
           "quantity": 3,
           "name": "imported box of chocolates",
-          "price": "11.25",
+          "total_price": "35.55",
           "categories": [
             "food",
             "imported"

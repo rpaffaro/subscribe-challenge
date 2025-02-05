@@ -17,25 +17,24 @@ RSpec.describe OrderSerializer do
           }
         )
       end
-      let(:serialized_order) do
-        {
-          order: {
-            items: [
-              {
-                quantity: 2,
-                name: 'imported chocolate',
-                price: '10.40',
-                categories: ['imported', 'food']
-              }
-            ],
-            total: '21.90',
-            sales_taxes: '1.10'
-          }
-        }
-      end
 
       it 'serializes the order with success' do
-        expect(described_class.new(order).as_json).to eq(serialized_order)
+        expect(described_class.new(order).as_json).to eq(
+          {
+            order: {
+              items: [
+                {
+                  quantity: 2,
+                  name: 'imported chocolate',
+                  total_price: '21.90',
+                  categories: ['imported', 'food']
+                }
+              ],
+              total: '21.90',
+              sales_taxes: '1.10'
+            }
+          }
+        )
       end
     end
   end

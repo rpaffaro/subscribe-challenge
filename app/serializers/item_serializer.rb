@@ -11,7 +11,7 @@ class ItemSerializer
     {
       quantity: item.quantity,
       name: item.name,
-      price: format('%.2f', item.price),
+      total_price: format('%.2f', item.updated_price),
       categories: item.categories
     }
   end

@@ -1,26 +1,28 @@
 # frozen_string_literal: true
 
+require 'yaml'
+
 # This class is responsible for deciding which tax rule will be applied
 # according to the product category and determining the tax amount.
 class Tax
-  DUTY_FREE_CATEGORIES = %w[food medical book].freeze
-  DUTY_FEE = 0.05
-  REGULAR_FEE = 0.1
-
   def calculate_duty_fee(categories, price)
-    tax = 0
-    return tax if (categories - DUTY_FREE_CATEGORIES).empty?
-
-    tax += REGULAR_FEE unless categories.intersect?(DUTY_FREE_CATEGORIES)
-    tax += DUTY_FEE if imported?(categories)
+    tax = categories.map do |category|
+      tax_by_categories[:categories].fetch(category.to_sym, regular_fee)[:tax]
+    end.sum
 
     round(price * tax.round(2))
   end
 
   private
 
-  def imported?(categories)
-    categories.include?('imported')
+  def tax_by_categories
+    @tax_by_categories ||= YAML.load_file(
+      './config/tax_by_categories.yml', symbolize_names: true
+    )
+  end
+
+  def regular_fee
+    tax_by_categories[:categories][:regular]
   end
 
   # The code below will round to the nearest 0.05 number
