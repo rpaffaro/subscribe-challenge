@@ -1,0 +1,50 @@
+AllCops:
+  TargetRubyVersion: 3.3
+  NewCops: enable
+  Exclude:
+    - 'spec/**/*'
+
+Layout/LineLength:
+  Max: 80
+
+Layout/IndentationWidth:
+  Width: 2
+
+Layout/SpaceAfterComma:
+  Enabled: true
+
+Layout/SpaceInsideHashLiteralBraces:
+  Enabled: true
+
+Style/Documentation:
+  Enabled: true
+
+Naming/PredicateName:
+  Enabled: false
+
+Naming/MethodName:
+  Enabled: true
+
+Lint/UselessAssignment:
+  Enabled: true
+
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
+
+Style/ConditionalAssignment:
+  Enabled: true
+
+Style/For:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 15
+
+Metrics/BlockLength:
+  Max: 25
+
+Style/ClassAndModuleChildren:
+  Enabled: true
+
+Style/IfUnlessModifier:
+  Enabled: true

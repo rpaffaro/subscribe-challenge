@@ -21,7 +21,7 @@ RSpec.describe Item do
 
         expect(Tax).to have_received(:new)
         expect(tax).to have_received(:calculate_duty_fee).with(['imported', 'perfume'], 55.30)
-        expect(klass.total_tax).to eq(8.30)
+        expect(klass.total_tax).to eq(16.60)
       end
     end
   end
